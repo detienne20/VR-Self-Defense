@@ -286,7 +286,7 @@ MonoBehaviour:
   spheres: {fileID: 1581967877}
   nextSceneUI: {fileID: 851300286}
   endingPanel: {fileID: 989576683}
-  sceneDummyTarget: 3
+  sceneDummyTarget: 6
   dummyLightingScript: {fileID: 1496483353}
   timeThroughMoves: 0.5
 --- !u!4 &612788482

@@ -236,14 +236,17 @@
      <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderComponent.cs" />
      <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarSkinnedMeshRenderPBSComponent.cs" />
      <Compile Include="Assets\OvrAvatar\Scripts\OvrAvatarTouchController.cs" />
+     <Compile Include="Assets\Scripts\ButtonPointManager.cs" />
      <Compile Include="Assets\Scripts\Change_Scene.cs" />
      <Compile Include="Assets\Scripts\Detect_OVR_Input.cs" />
      <Compile Include="Assets\Scripts\DummyLighting.cs" />
      <Compile Include="Assets\Scripts\LevelFourSphereController.cs" />
      <Compile Include="Assets\Scripts\LevelThreeSphereController.cs" />
      <Compile Include="Assets\Scripts\LevelTwoSphereController.cs" />
+     <Compile Include="Assets\Scripts\mkPoseData.cs" />
      <Compile Include="Assets\Scripts\mkRemoteLoopbackLoad.cs" />
      <Compile Include="Assets\Scripts\mkRemoteLoopbackManager.cs" />
+     <Compile Include="Assets\Scripts\mkRiftData.cs" />
      <Compile Include="Assets\Scripts\MoveFrame.cs" />
      <Compile Include="Assets\Scripts\MusicDoNotDestroy.cs" />
      <Compile Include="Assets\Scripts\Ray_Cast.cs" />
@@ -256,6 +259,7 @@
      <Compile Include="Assets\Scripts\StomachScene_Game_Manager.cs" />
      <Compile Include="Assets\Scripts\TargetLightGroup.cs" />
      <Compile Include="Assets\Scripts\TempleScript.cs" />
+     <Compile Include="Assets\Scripts\TouchPointer.cs" />
      <None Include="Assets\OvrAvatar\Content\Materials\AvatarMaterialStateShader.cginc" />
      <None Include="Assets\laxer Assets\creek\Shaders\RunningWater.shader" />
      <None Include="Assets\OVR\Resources\OVRMRUnlitTransparent.shader" />

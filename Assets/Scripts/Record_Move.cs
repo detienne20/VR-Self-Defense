@@ -26,6 +26,8 @@ public class Record_Move : MonoBehaviour {
 	private float mytime = 0.0f;
 	private int frameskipper = 0;
 	public int framesSkipped = 50;
+	public GameObject prefab;
+	public GameObject head;
 
 	private bool recording = false;
 
@@ -36,7 +38,7 @@ public class Record_Move : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if( OVRInput.GetUp(OVRInput.Button.One) ){
+		if( Input.GetKeyDown("space") || OVRInput.GetUp(OVRInput.Button.One) ){
 			recording = !recording;
 			if (recording) {
 				print ("recording started");
@@ -51,9 +53,14 @@ public class Record_Move : MonoBehaviour {
 //				//bf.Serialize (file, BitStream.Serialize(frames));
 ////				print (JsonConvert.SerializeObject(frames, Formatting.Indented););
 //				file.Close ();
-//				foreach (MoveFrame m in frames) {
-//					print (m.t);
-//				}
+				int c = frames.Count;
+//				GameObject[] arr = new GameObject[c];
+//				int i = 0;
+				foreach (MoveFrame m in frames) {
+					print (m.pf.headPosition);
+
+					GameObject g = Instantiate(prefab, m.pf.headPosition, m.pf.headRotation, head.transform) as GameObject;
+				}
 			}
 		}
 //		OvrAvatarDriver.GetCurrentPose ();

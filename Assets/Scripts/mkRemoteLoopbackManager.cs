@@ -64,7 +64,7 @@ public class mkRemoteLoopbackManager : MonoBehaviour
 
     void Update()
     {
-		if ( Input.GetKeyDown("space") || OVRInput.Get(OVRInput.Button.One) ) {
+		if ( OVRInput.Get(OVRInput.Button.One) ) {
 			print ("recording started");
 			recording = true;
 		}
@@ -81,7 +81,7 @@ public class mkRemoteLoopbackManager : MonoBehaviour
 	                packetQueue.Remove(packet);
 	            }
 	        }
-			if (packetQueue.Count > 1) {
+			if (packetQueue.Count > 10) {
 				print ("recording finished");
 				print ("name recording");
 				done = true;
