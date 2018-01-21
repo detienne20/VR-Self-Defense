@@ -243,6 +243,8 @@
      <Compile Include="Assets\Scripts\LevelFourSphereController.cs" />
      <Compile Include="Assets\Scripts\LevelThreeSphereController.cs" />
      <Compile Include="Assets\Scripts\LevelTwoSphereController.cs" />
+     <Compile Include="Assets\Scripts\mkArrayData.cs" />
+     <Compile Include="Assets\Scripts\mkPlayMove.cs" />
      <Compile Include="Assets\Scripts\mkPoseData.cs" />
      <Compile Include="Assets\Scripts\mkRemoteLoopbackLoad.cs" />
      <Compile Include="Assets\Scripts\mkRemoteLoopbackManager.cs" />

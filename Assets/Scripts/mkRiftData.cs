@@ -10,20 +10,23 @@ public class mkRiftData : MonoBehaviour {
 
 	public struct Frame
 	{
-		public Vector3 h;// = head.transform.position;
-		public Vector3 lh;// = lhand.transform.position;
-		public Vector3 rh;// = rhand.transform.position;
+		public float t;
+
+		public Vector3 hp;// = head.transform.position;
+		public Vector3 lhp;// = lhand.transform.position;
+		public Vector3 rhp;// = rhand.transform.position;
 
 		public Quaternion hr;// = head.transform.position;
 		public Quaternion lhr;// = lhand.transform.position;
 		public Quaternion rhr;// = rhand.transform.position;
 	};
 
-	public Frame getFrame(){
-		Frame F = new Frame(); 
-		F.h = head.transform.position;
-		F.lh = lhand.transform.position;
-		F.rh = rhand.transform.position;
+	public Frame getFrame(float startTime){
+		Frame F = new Frame();
+		F.t = Time.time - startTime;
+		F.hp = head.transform.position;
+		F.lhp = lhand.transform.position;
+		F.rhp = rhand.transform.position;
 
 		F.hr = head.transform.rotation;
 		F.lhr = lhand.transform.rotation;
